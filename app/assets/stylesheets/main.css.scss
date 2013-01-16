@@ -1,8 +1,80 @@
+ul{
+	list-style:none;
+}
+
+li{
+	list-style:none;
+}
+
+#container{
+	position:relative;
+	top:100px;
+}
+
 #mainheader{
 	background-image: url('/assets/hempheader.png');
 	height:150px;
 	background-position:center;
+	position: relative;     
+	border-bottom:10px black solid;
+}
+
+#alternateheader{ 
+	background-color: #008710; 
+	margin-top: 500px;
+	height:95px;
+	position: relative;     
+	border-bottom:10px #006012 solid;
+	border-top:30px black solid;
+}  
+      
+#altlogotop{
+	float: left;
+	z-index:99;
+	position:relative;
+	left:50px;
+	top:5px;
+}
+
+#alt-searchbar{
+	margin:auto;
+	position:relative;
+}   
+
+#alt-navlinks{
 	position: relative;
+	left: 731px;
+	top: -70px;
+	ul{
+		float: left;
+   		padding: 0px;
+		margin: 0px;
+	}
+	li{
+		transition: opacity .5s;
+		-moz-transition: opacity .5s;
+		-webkit-transition: opacity .5s;
+		-o-transition: opacity .5s;         
+		-moz-opacity: 0.7;
+		opacity: 0.7;
+		float:left;     
+		padding-right:15px;
+	}               
+	li:hover{
+		-moz-opacity: 1;
+		opacity: 1;
+		transition-timing-function: ease-out;
+	}
+}     
+
+#alt-searchform{
+	-webkit-border-radius: 10px;
+	border-radius: 10px;   
+	top:10px;
+	left:10px;
+	z-index:98;
+	height:85px;
+	position:relative;
 }
 
 #topblackbar{
@@ -14,6 +86,45 @@
 	width:940px;
 	margin:auto;
 	position:relative;
+}
+
+#navbar{    
+	width:1200px;
+	position:relative;
+	margin:auto;
+	top:-97px;
+	left:-119px;
+}                
+                 
+#navbarimg{
+	-webkit-box-shadow: 0px -12px 0px 0px rgba(0, 0, 0, 1);
+	box-shadow: 0px -12px 10px 0px rgba(0, 0, 0, 1);
+}
+
+#navlinks{
+	position: relative;
+	left: 731px;
+	top: -89px;
+	ul{
+		float: left;
+   		padding: 0px;
+		margin: 0px;
+	}
+	li{
+		transition: opacity .5s;
+		-moz-transition: opacity .5s;
+		-webkit-transition: opacity .5s;
+		-o-transition: opacity .5s;         
+		-moz-opacity: 0.7;
+		opacity: 0.7;
+		float:left;     
+		padding-right:15px;
+	}               
+	li:hover{
+		-moz-opacity: 1;
+		opacity: 1;
+		transition-timing-function: ease-out;
+	}
 }
 
 #logotop{

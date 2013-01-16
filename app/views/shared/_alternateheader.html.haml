@@ -1,17 +1,14 @@
-#topblackbar
-#mainheader
-	#searchbar
-		= image_tag "logotop.png", id: "logotop"
-		#mainsearchform
+#alternateheader
+	= image_tag "critheadlogo.png", id: "altlogotop"
+	#alt-searchbar
+		#alt-searchform
 			= simple_form_for Search.new, action:"/" do |f|
 				= f.input :query, label: false, placeholder: "Query", input_html: {class:"topsearch"}
 				%p#near near
 				= f.input :user_location, label: false, placeholder: "UserLocation", input_html: {class:"topsearch"}
 			.mainsearchbtn
 				= image_tag "searchicon.png", id:"topsearchicon"         
-	#navbar
-		= image_tag "navbar.png", id:"navbarimg"
-		#navlinks
+		#alt-navlinks
 			%ul
 				%li
 					= link_to( image_tag("field-logo.png"), "#" )
@@ -24,23 +21,4 @@
 				%li
 					= link_to( image_tag("forum-icon.png"), "#" )
 				%li
-					= link_to( image_tag("saver-icon.png"), "#" )  
-#container
-	#header
-		%h1 Awesome App Header
-
-	#sidebar
-		%div item 1
-		%div item 2
-		%div item 3
-		%div item 4
-
-	#content
-		- if notice
-			%p.notice= notice
-		- if alert
-			%p.error= alert
-		= yield
-
-	#footer
-		%h3 Awesome App Footer        
+					= link_to( image_tag("saver-icon.png"), "#" )

@@ -12,22 +12,5 @@
 	%body.bp.two-col
 
 		= render 'layouts/mainheader'
-		#container
-			#header
-				%h1 Awesome App Header
+		= render 'shared/alternateheader'
 
-			#sidebar
-				%div item 1
-				%div item 2
-				%div item 3
-				%div item 4
-
-			#content
-				- if notice
-					%p.notice= notice
-				- if alert
-					%p.error= alert
-				= yield
-
-			#footer
-				%h3 Awesome App Footer
